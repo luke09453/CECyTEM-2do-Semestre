@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos Socioemocionales</title>
+    <link rel="stylesheet" href="Materias.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <h2>Parciales</h2>
+        <a href="#parcial1">1<sup>er</sup> Parcial</a>
+        <a href="#parcial2">2<sup>do</sup> Parcial</a>
+        <a href="#parcial3">3<sup>er</sup> Parcial</a>
+        <div class="info-sidebar">
+            <p id="fecha"></p>
+            <p id="hora"></p>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="content">
+
+        <header>
+            <h1>R. Socioemocionales</h1>
+            <p>Descubre las diferentes formas de nuestras emociones
+            </p>
+        </header>
+
+        <section id="parcial1">
+            <h2>1<sup>er</sup> Parcial</h2>
+            <h3>¿Qué son las emociones?</h3>
+
+            <p>
+            Las emociones son reacciones naturales que experimentan las personas ante distintas
+            situaciones, pensamientos o experiencias. Nos ayudan a expresar cómo nos sentimos y
+            a responder a lo que ocurre a nuestro alrededor.
+            </p>
+
+            <div class="Mosa-Pseudo">
+                <img src="Feliz.jpg" alt="Emoji feliz">
+                <img src="Triste.jpg" alt="Emoji Triste">
+                <img src="Enojado.jpg" alt="Emoji Enojado">
+            </div>
+
+            <p>
+            Las emociones influyen en nuestro comportamiento, decisiones y forma de relacionarnos
+            con los demás. Algunas emociones pueden ser agradables, como la felicidad, mientras
+            que otras pueden resultar incómodas, como la tristeza o el enojo.
+            </p>
+
+            <p>
+            Todas las emociones son importantes, ya que cumplen una función: nos alertan,
+            nos motivan o nos ayudan a comprender lo que sentimos en diferentes momentos.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Felicidad:</strong> Se siente cuando estamos contentos o satisfechos.
+                </li>
+                <li>
+                    <strong>Tristeza:</strong> Aparece cuando perdemos algo o nos sentimos desanimados.
+                </li>
+                <li>
+                    <strong>Enojo:</strong> Surge ante situaciones de injusticia o frustración.
+                </li>
+            </ul>
+
+            <p>
+            Aprender a reconocer y controlar nuestras emociones es importante para tener una
+            mejor convivencia y bienestar personal.
+            </p>
+            <section class="video-cecytem">
+                <h3>Video sobre las emociones</h3>
+
+                <div class="contenedor-video">
+                    <video controls>
+                        <source src="emociones.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+                </div>
+            </section>
+            <h3>Carta para ti de 10 años y para tu yo en 10 años</h3>
+            
+            <p>
+            En este tema, lo único que hicimos fue escribir una carta a nosotros mismos,
+            dirigida a nuestro “yo” de hace 10 años. En ella reflexionamos sobre todo lo
+            que hemos vivido, aprendido y logrado a lo largo de este tiempo, así como
+            las experiencias que nos han marcado.
+            </p>
+
+            <p>
+            Además, realizamos otra carta en la que expresamos lo que nos gustaría decirle
+            a nuestro “yo” dentro de 10 años, incluyendo nuestros sueños, metas,
+            motivaciones y los consejos que consideramos importantes para nuestro futuro.
+            </p>
+
+            <p>
+            Desde mi punto de vista, fue una actividad muy buena, ya que nos permitió
+            reflexionar sobre nuestro crecimiento personal, valorar nuestros logros y
+            pensar de manera consciente en el camino que queremos seguir más adelante.
+            </p>
+            <button class="btn-iniciar" onclick="mostrarCuestionarioEm()">Iniciar cuestionario</button>
+
+            <section id="cuestionarioEm" style="display:none;">
+                <h3>Cuestionario: Emociones</h3>
+
+                <div class="pregunta">
+                    <p>1. ¿Qué son las emociones?</p>
+                    <label><input type="radio" name="e1" onclick="responderEm(this,true)"> Reacciones naturales ante situaciones</label>
+                    <label><input type="radio" name="e1" onclick="responderEm(this,false)"> Enfermedades mentales</label>
+                    <label><input type="radio" name="e1" onclick="responderEm(this,false)"> Tipos de pensamientos</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>2. ¿Qué nos permiten expresar las emociones?</p>
+                    <label><input type="radio" name="e2" onclick="responderEm(this,true)"> Cómo nos sentimos</label>
+                    <label><input type="radio" name="e2" onclick="responderEm(this,false)"> Solo ideas</label>
+                    <label><input type="radio" name="e2" onclick="responderEm(this,false)"> Información técnica</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>3. ¿Cuál es una emoción agradable?</p>
+                    <label><input type="radio" name="e3" onclick="responderEm(this,true)"> Felicidad</label>
+                    <label><input type="radio" name="e3" onclick="responderEm(this,false)"> Enojo</label>
+                    <label><input type="radio" name="e3" onclick="responderEm(this,false)"> Tristeza</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>4. ¿Qué emoción surge ante una injusticia?</p>
+                    <label><input type="radio" name="e4" onclick="responderEm(this,false)"> Sorpresa</label>
+                    <label><input type="radio" name="e4" onclick="responderEm(this,false)"> Felicidad</label>
+                    <label><input type="radio" name="e4" onclick="responderEm(this,true)"> Enojo</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>5. ¿Por qué todas las emociones son importantes?</p>
+                    <label><input type="radio" name="e5" onclick="responderEm(this,false)"> No sirven</label>
+                    <label><input type="radio" name="e5" onclick="responderEm(this,true)"> Cumplen una función</label>
+                    <label><input type="radio" name="e5" onclick="responderEm(this,false)"> Son iguales</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>6. ¿Qué emoción aparece cuando perdemos algo?</p>
+                    <label><input type="radio" name="e6" onclick="responderEm(this,false)"> Felicidad</label>
+                    <label><input type="radio" name="e6" onclick="responderEm(this,true)"> Tristeza</label>
+                    <label><input type="radio" name="e6" onclick="responderEm(this,false)"> Euforia</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>7. ¿Qué nos ayudan a hacer las emociones?</p>
+                    <label><input type="radio" name="e7" onclick="responderEm(this,true)"> Tomar decisiones</label>
+                    <label><input type="radio" name="e7" onclick="responderEm(this,false)"> Dormir más</label>
+                    <label><input type="radio" name="e7" onclick="responderEm(this,false)"> Olvidar todo</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>8. ¿Qué actividad se realizó en este tema?</p>
+                    <label><input type="radio" name="e8" onclick="responderEm(this,true)"> Escribir cartas personales</label>
+                    <label><input type="radio" name="e8" onclick="responderEm(this,false)"> Resolver exámenes</label>
+                    <label><input type="radio" name="e8" onclick="responderEm(this,false)"> Investigar en internet</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>9. ¿A quién iba dirigida una de las cartas?</p>
+                    <label><input type="radio" name="e9" onclick="responderEm(this,true)"> A nuestro yo de hace 10 años</label>
+                    <label><input type="radio" name="e9" onclick="responderEm(this,false)"> A un amigo</label>
+                    <label><input type="radio" name="e9" onclick="responderEm(this,false)"> A un maestro</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>10. ¿Qué permitió esta actividad?</p>
+                    <label><input type="radio" name="e10" onclick="responderEm(this,true)"> Reflexionar sobre nuestro crecimiento</label>
+                    <label><input type="radio" name="e10" onclick="responderEm(this,false)"> Copiar información</label>
+                    <label><input type="radio" name="e10" onclick="responderEm(this,false)"> Memorizar textos</label>
+                </div>
+
+                <div class="resultado" id="resultadoEm">Calificación: 0 / 10</div>
+
+                <button onclick="terminarEm()">Terminar cuestionario</button>
+                <div class="resultado" id="mensajeFinalEm"></div>
+            </section>
+        </section>
+
+        <section id="parcial2">
+            <h2>2<sup>do</sup> Parcial</h2>
+            <h3>Tu proprósito en el futuro</h3>
+            <p>
+                En este tema reflexionamos sobre nuestro propósito en el futuro, es decir,
+                aquello que queremos lograr más adelante en nuestra vida personal, académica
+                y profesional. Pensar en nuestro propósito nos ayuda a plantearnos metas,
+                tomar decisiones conscientes y mantener la motivación para seguir avanzando.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="Futuro.jpg" alt="Futuro">
+            </div>
+            <p>
+                Identificar nuestro propósito nos permite reconocer nuestras habilidades,
+                intereses y valores, así como visualizar el tipo de persona que queremos
+                llegar a ser con el paso del tiempo.
+            </p>
+
+            <h3>Dibujarte en un globo</h3>
+            <p>
+                En esta actividad, se nos pidió dibujarnos dentro de un globo, representando
+                cómo nos sentíamos en ese momento. El dibujo no solo reflejaba nuestra apariencia,
+                sino también nuestras emociones, pensamientos y estado de ánimo.
+            </p>
+
+            <p>
+                El globo simbolizaba nuestro espacio personal y emocional, permitiéndonos
+                expresar de manera creativa lo que llevábamos dentro. A través de colores,
+                formas y expresiones, cada dibujo mostraba una parte de cómo nos percibíamos
+                en ese instante.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="Feliz.jpg" alt="Emoji Feliz">
+            </div>
+            <p>
+                Esta actividad fue importante porque nos ayudó a identificar nuestras emociones,
+                expresarlas sin palabras y reflexionar sobre cómo nos sentíamos, fomentando
+                el autoconocimiento y la empatía.
+            </p>
+        </section>
+
+        <section id="parcial3">
+            <h2>3<sup>er</sup> Parcial</h2>
+            <h3>La inteligencia social</h3>
+
+            <p>
+                La inteligencia social es la capacidad que tienen las personas para relacionarse
+                de manera adecuada con los demás, comprendiendo sus emociones, pensamientos y
+                comportamientos. Esta habilidad permite comunicarse de forma efectiva, resolver
+                conflictos y convivir en armonía dentro de distintos entornos sociales.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="Inteligencia.jpg" alt="Inteligencia social">
+            </div>
+            <p>
+                Una persona con inteligencia social sabe escuchar, expresar sus ideas con respeto
+                y adaptarse a diferentes situaciones sociales. También es capaz de reconocer las
+                emociones de los demás y actuar con empatía.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Comunicación:</strong> Expresar ideas y sentimientos de forma clara y respetuosa.
+                </li>
+                <li>
+                    <strong>Empatía:</strong> Comprender cómo se sienten los demás.
+                </li>
+                <li>
+                    <strong>Trabajo en equipo:</strong> Colaborar con otras personas para lograr objetivos comunes.
+                </li>
+                <li>
+                    <strong>Respeto:</strong> Aceptar diferentes opiniones y formas de pensar.
+                </li>
+            </ul>
+
+            <p>
+                Desarrollar la inteligencia social es importante porque mejora las relaciones
+                personales, fortalece la convivencia y ayuda a enfrentar situaciones sociales
+                de manera positiva.
+            </p>
+
+            <h3>Resolución de problemas</h3>
+
+            <p>
+                La resolución de problemas es la capacidad de identificar una situación difícil,
+                analizarla y encontrar la mejor solución posible. Esta habilidad es fundamental
+                tanto en la vida diaria como en el ámbito escolar y profesional.
+            </p>
+
+            <p>
+                Resolver un problema implica pensar con calma, evaluar diferentes opciones y
+                tomar decisiones responsables. No todos los problemas se solucionan de inmediato,
+                pero el proceso ayuda a aprender y mejorar.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="Problemas.jpg" alt="Resolucion de problemas">
+            </div>
+            <ul>
+                <li>
+                    <strong>Identificar el problema:</strong> Reconocer claramente la situación.
+                </li>
+                <li>
+                    <strong>Analizar causas:</strong> Entender por qué ocurrió el problema.
+                </li>
+                <li>
+                    <strong>Buscar soluciones:</strong> Pensar en distintas alternativas.
+                </li>
+                <li>
+                    <strong>Tomar decisiones:</strong> Elegir la mejor opción.
+                </li>
+                <li>
+                    <strong>Evaluar resultados:</strong> Revisar si la solución funcionó.
+                </li>
+            </ul>
+
+            <p>
+                La resolución de problemas permite desarrollar el pensamiento crítico,
+                la responsabilidad y la capacidad de enfrentar retos de forma positiva.
+            </p>
+            <button class="btn-iniciar" onclick="mostrarCuestionarioIS()">
+                Iniciar cuestionario
+            </button>
+
+            <section id="cuestionarioIS" style="display:none;">
+                <h3>Cuestionario: Inteligencia social y resolución de problemas</h3>
+
+                <div class="pregunta">
+                    <p>1. ¿Qué es la inteligencia social?</p>
+                    <label><input type="radio" name="is1" onclick="responderIS(this, true)">
+                        La capacidad de relacionarse adecuadamente con otras personas
+                    </label>
+                    <label><input type="radio" name="is1" onclick="responderIS(this, false)">
+                        La habilidad para usar computadoras
+                    </label>
+                    <label><input type="radio" name="is1" onclick="responderIS(this, false)">
+                        La capacidad de resolver ecuaciones
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>2. ¿Cuál es una habilidad de la inteligencia social?</p>
+                    <label><input type="radio" name="is2" onclick="responderIS(this, false)">
+                        Memoria fotográfica
+                    </label>
+                    <label><input type="radio" name="is2" onclick="responderIS(this, false)">
+                        Velocidad de escritura
+                    </label>
+                    <label><input type="radio" name="is2" onclick="responderIS(this, true)">
+                        Empatía
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>3. ¿Por qué es importante la inteligencia social?</p>
+                    <label><input type="radio" name="is3" onclick="responderIS(this, true)">
+                        Mejora la convivencia y las relaciones
+                    </label>
+                    <label><input type="radio" name="is3" onclick="responderIS(this, false)">
+                        Ayuda a programar
+                    </label>
+                    <label><input type="radio" name="is3" onclick="responderIS(this, false)">
+                        Sirve para diseñar páginas web
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>4. ¿Qué significa tener empatía?</p>
+                    <label><input type="radio" name="is4" onclick="responderIS(this, true)">
+                        Comprender los sentimientos de los demás
+                    </label>
+                    <label><input type="radio" name="is4" onclick="responderIS(this, false)">
+                        Ignorar emociones
+                    </label>
+                    <label><input type="radio" name="is4" onclick="responderIS(this, false)">
+                        Pensar solo en uno mismo
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>5. ¿Qué es la resolución de problemas?</p>
+                    <label><input type="radio" name="is5" onclick="responderIS(this, false)">
+                        Copiar respuestas
+                    </label>
+                    <label><input type="radio" name="is5" onclick="responderIS(this, false)">
+                        Evitar los problemas
+                    </label>
+                    <label><input type="radio" name="is5" onclick="responderIS(this, true)">
+                        Analizar una situación y buscar soluciones
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>6. ¿Cuál es el primer paso para resolver un problema?</p>
+                    <label><input type="radio" name="is6" onclick="responderIS(this, true)">
+                        Identificar el problema
+                    </label>
+                    <label><input type="radio" name="is6" onclick="responderIS(this, false)">
+                        Ignorarlo
+                    </label>
+                    <label><input type="radio" name="is6" onclick="responderIS(this, false)">
+                        Culpar a otros
+                    </label>
+                </div>  
+
+                <div class="pregunta">
+                    <p>7. ¿Qué ayuda a resolver problemas de forma efectiva?</p>
+                    <label><input type="radio" name="is7" onclick="responderIS(this, true)">
+                        Pensar con calma y analizar opciones
+                    </label>
+                    <label><input type="radio" name="is7" onclick="responderIS(this, false)">
+                        Actuar sin pensar
+                    </label>
+                    <label><input type="radio" name="is7" onclick="responderIS(this, false)">
+                        Evitar decisiones
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>8. ¿Qué relación existe entre inteligencia social y resolución de problemas?</p>
+                    <label><input type="radio" name="is8" onclick="responderIS(this, false)">
+                        No tienen relación
+                    </label>
+                    <label><input type="radio" name="is8" onclick="responderIS(this, true)">
+                        Ambas ayudan a enfrentar situaciones de la vida diaria
+                    </label>
+                    <label><input type="radio" name="is8" onclick="responderIS(this, false)">
+                        Solo se usan en la escuela
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>9. ¿Qué actitud favorece la inteligencia social?</p>
+                    <label><input type="radio" name="is9" onclick="responderIS(this, false)">
+                        Egoísmo
+                    </label>
+                    <label><input type="radio" name="is9" onclick="responderIS(this, false)">
+                        Falta de comunicación
+                    </label>
+                    <label><input type="radio" name="is9" onclick="responderIS(this, true)">
+                        Respeto hacia los demás
+                    </label>
+                </div>
+
+                <div class="pregunta">
+                    <p>10. ¿Por qué es importante resolver problemas?</p>
+                    <label><input type="radio" name="is10" onclick="responderIS(this, false)">
+                        Para evitar responsabilidades
+                    </label>
+                    <label><input type="radio" name="is10" onclick="responderIS(this, true)">
+                        Permite tomar mejores decisiones en la vida
+                    </label>
+                    <label><input type="radio" name="is10" onclick="responderIS(this, false)">
+                        Para no pensar
+                    </label>
+                </div>
+
+                <div class="resultado" id="resultadoIS">
+                    Calificación: 0 / 10
+                </div>
+
+                <button onclick="terminarIS()">Terminar cuestionario</button>
+                <div class="resultado" id="mensajeFinalIS"></div>
+            </section>
+        </section>
+
+        <footer>
+            © 2026 CECyTEM Plantel Cuautitlán - Página informativa
+        </footer>
+
+    </div>
+<script>
+let puntosEm = 0;
+let respondidasEm = 0;
+
+function mostrarCuestionarioEm() {
+    document.getElementById("cuestionarioEm").style.display = "block";
+}
+
+function responderEm(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosEm++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasEm++;
+    document.getElementById("resultadoEm").innerText =
+        "Calificación: " + puntosEm + " / 10";
+}
+
+function terminarEm() {
+    if (respondidasEm < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalEm");
+    if (puntosEm >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosEm + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosEm + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+let puntosIS = 0;
+let respondidasIS = 0;
+
+function mostrarCuestionarioIS() {
+    document.getElementById("cuestionarioIS").style.display = "block";
+}
+
+function responderIS(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosIS++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasIS++;
+
+    document.getElementById("resultadoIS").innerText =
+        "Calificación: " + puntosIS + " / 10";
+}
+
+function terminarIS() {
+    if (respondidasIS < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalIS");
+    if (puntosIS >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosIS + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosIS + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    const fecha = ahora.toLocaleDateString("es-MX", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
+
+    const hora = ahora.toLocaleTimeString("es-MX");
+
+    document.getElementById("fecha").innerText = "Fecha: " + fecha;
+    document.getElementById("hora").innerText = "Hora: " + hora;
+}
+
+actualizarFechaHora();
+setInterval(actualizarFechaHora, 1000);
+</script>
+
+</body>
+</html>

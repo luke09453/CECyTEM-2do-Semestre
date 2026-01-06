@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="Estilo2.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <h1>Bienvenido al 2<sup>do</sup> Semestre</h1>
+</header>
+
+<section class="contenido">
+    <img src="LapizyCuaderno.jpg" alt="Lápiz y cuaderno">
+
+    <div class="texto">
+        <h2>Lo que encontrarás en esta sección</h2>
+        <p>
+            Aquí podrás ver todo lo que se vio en el
+            segundo semestre, desde el primer parcial hasta
+            el tercero.
+        </p>
+
+        <h2>¿Cuál es el propósito?</h2>
+        <p>
+            El propósito de esta página es brindar material
+            de apoyo a las nuevas generaciones de esta institución,
+            ayudándolos en su carrera técnica de programación,
+            especialmente cuando tengan dificultades en algunos temas.
+        </p>
+
+        <h2>¿Cómo funciona?</h2>
+        <p>
+            En la parte superior encontrarás 5 materias, algunas
+            abreviadas. A continuación se explica su significado:
+            <br><br>
+            <strong>Recursos S.E:</strong> Recursos Socioemocionales.<br>
+            <strong>CulturaD:</strong> Cultura Digital.<br>
+            <strong>DiseñoSoft:</strong> Diseña software de sistemas informáticos.
+        </p>
+    </div>
+
+    <button class="btn-iniciar" onclick="mostrarRegistro()">
+        Registrate antes de empezar
+    </button>
+
+    <!-- REGISTRO -->
+    <section id="registro" style="display:none;">
+        <h3>Registro del alumno</h3>
+
+        <form onsubmit="irCuestionario(event)">
+            <label>Nombre completo:</label>
+            <input type="text" required>
+
+            <label>Domicilio:</label>
+            <input type="text" required>
+
+            <label>Fecha de nacimiento:</label>
+            <input type="date" required>
+
+            <label>Grupo:</label>
+            <input type="text" required>
+
+            <button type="submit">Continuar</button>
+        </form>
+    </section>
+</section>
+
+<footer class="pie">
+    © 2026 CECyTEM Plantel Cuautitlán - Página informativa
+</footer>
+
+<script>
+function mostrarRegistro() {
+    document.getElementById("registro").style.display = "block";
+}
+
+function irCuestionario(event) {
+    event.preventDefault();
+    alert("Registro enviado correctamente ✅");
+}
+</script>
+
+</body>
+</html>

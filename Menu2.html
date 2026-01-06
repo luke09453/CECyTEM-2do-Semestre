@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="Style2.css">
+    </head>
+    <body>
+        <center>
+            <br>
+            <table>
+                <tr>
+                    <td><a href="Bienvenida.html" target="bienvenida">Menu</a>
+                    <td><a href="Quimica.html" target="bienvenida">Quimica</a></td>
+                    <td><a href="CSociales.html" target="bienvenida">Ciencias sociales</a></td>
+                    <td><a href="RSEII.html" target="bienvenida">Recursos S.E.</a></td>
+                    <td><a href="CulturaD.html" target="bienvenida">Cultura D.</a></td>
+                    <td><a href="DisenoSoft.html" target="bienvenida">DisenoSoft</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info-sidebar">
+                        <h4 id="visitas"></h4>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <script>
+        
+    let visitas = localStorage.getItem("visitas");
+
+    if (visitas === null) {
+        visitas = 1;
+    } else {
+        visitas = parseInt(visitas) + 1;
+    }
+
+    localStorage.setItem("visitas", visitas);
+
+    document.getElementById("visitas").innerText =
+        "Visitas: " + visitas;
+    </script>
+    </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de software</title>
+    <link rel="stylesheet" href="Materias.css">
+</head>
+
+<body>
+
+<!-- MENÚ LATERAL -->
+<nav class="sidebar">
+    <h2>Parciales</h2>
+    <a href="#parcial1">1<sup>er</sup> Parcial</a>
+    <a href="#parcial2">2<sup>do</sup> Parcial</a>
+    <a href="#parcial3">3<sup>er</sup> Parcial</a>
+    <div class="info-sidebar">
+        <p id="fecha"></p>
+        <p id="hora"></p>
+    </div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="content">
+
+<header>
+    <h1>Diseño de software</h1>
+    <p>Verás las bases de la programación</p>
+</header>
+
+<!-- ================== PARCIAL 1 ================== -->
+<section id="parcial1">
+    <h2>1<sup>er</sup> Parcial</h2>
+
+    <h3>Diagramas de flujo y Pseudocódigo</h3>
+    <p>
+        Empezamos el primer parcial viendo diagramas de flujo.
+        Para entenderlos es importante conocer la simbología
+        que los compone.
+    </p>
+
+    <img src="SimboolosDFD.png" alt="Simbología DFD">
+
+    <p>
+        Los diagramas de flujo permiten representar de forma gráfica
+        los pasos que sigue un algoritmo para resolver un problema.
+        Cada símbolo tiene un significado específico, lo que facilita
+        la comprensión de la lógica del proceso.
+    </p>
+
+    <p>
+        Gracias a los diagramas de flujo aprendimos a identificar
+        entradas, procesos y salidas, lo cual es fundamental antes
+        de comenzar a programar en cualquier lenguaje.
+    </p>
+    <p>
+        Estas prácticas nos ayudaron a desarrollar el pensamiento
+        lógico y a ordenar correctamente las instrucciones necesarias
+        para que un programa funcione de manera adecuada.
+    </p>
+
+
+    <div class="mosaico-practicas">
+        <img src="Practica1.jpeg" alt="Ejercicio 1">
+        <img src="Practica2.jpeg" alt="Ejercicio 2">
+        <img src="Practica3.jpeg" alt="Ejercicio 3">
+    </div>
+
+    <h3>Pseudocódigos</h3>
+    
+    <p>
+        El pseudocódigo utiliza un lenguaje sencillo, parecido al
+        lenguaje humano, lo que permite enfocarse en la lógica
+        del problema sin preocuparse por la sintaxis de un
+        lenguaje de programación real.
+    </p>
+
+    <p>
+        Con la herramienta PSeInt aprendimos a escribir algoritmos,
+        usar estructuras condicionales como <strong>SI</strong>,
+        ciclos como <strong>MIENTRAS</strong> y variables para
+        almacenar datos.
+    </p>
+
+
+    <div class="Mosa-Pseudo">
+        <img src="Practica1Pseudo.jpeg" alt="Pseudocódigo 1">
+        <img src="Practica2Pseudo.jpeg" alt="Pseudocódigo 2">
+    </div>
+    <p>
+        Estas actividades fortalecieron nuestra comprensión de la
+        lógica computacional y nos prepararon para programar
+        posteriormente en lenguajes más avanzados.
+    </p>
+
+    <div class="video-contenedor">
+        <iframe src="https://www.youtube.com/embed/h2zIO44Lmbs"
+                title="Curso de Pseudocódigo"
+                allowfullscreen></iframe>
+    </div>
+
+    <h3>Metodología de desarrollo de software</h3>
+    <p>
+        La metodología de desarrollo de software es un conjunto de
+        pasos, reglas y técnicas que se utilizan para planear,
+        diseñar, construir, probar y mantener un sistema de software.
+    </p>
+
+    <p>
+        Su objetivo principal es organizar el trabajo, reducir
+        errores y asegurar que el software cumpla con las necesidades
+        del usuario final.
+    </p>
+
+    <p>
+        Gracias a las metodologías, los equipos de desarrollo pueden
+        trabajar de forma ordenada, cumplir tiempos de entrega y
+        mejorar la calidad del producto.
+    </p>
+
+    
+
+    <div class="video-contenedor">
+        <iframe src="https://www.youtube.com/embed/NDMrM6G1SRg"
+                title="Metodología de software"
+                allowfullscreen></iframe>
+    </div>
+
+    <h3>Tipos de usuario</h3>
+    <p>
+        Son categorías de personas que interactúan con un sistema.
+    </p>
+    <p>
+        Los tipos de usuario permiten definir qué acciones puede
+        realizar cada persona dentro de un sistema, ayudando a
+        mantener la seguridad y el correcto funcionamiento del
+        software.
+    </p>
+
+    <ul>
+        <li><strong>Administrador:</strong> Tiene control total del sistema.</li>
+        <li><strong>Usuario estándar:</strong> Puede usar las funciones principales.</li>
+        <li><strong>Invitado:</strong> Solo puede visualizar información.</li>
+    </ul>
+
+
+    <div class="Mosa-Pseudo">
+        <img src="TiposUsuario.png" alt="Tipos de usuario">
+    </div>
+    <p>
+        Identificar los tipos de usuario es importante para evitar
+        accesos no autorizados y garantizar que cada persona use
+        el sistema de manera correcta.
+    </p>
+
+    <!-- BOTÓN -->
+    <button class="btn-iniciar" onclick="mostrarCuestionario()">
+        Iniciar cuestionario
+    </button>
+
+    
+
+    <section id="cuestionario" style="display:none;">
+    <h3>Cuestionario - 1er Parcial</h3>
+
+    <div class="pregunta">
+        <p>1. ¿Qué es un diagrama de flujo?</p>
+        <label><input type="radio" name="p1" onclick="responder(this, true)"> Representación gráfica de un algoritmo</label>
+        <label><input type="radio" name="p1" onclick="responder(this, false)"> Un programa de computadora</label>
+        <label><input type="radio" name="p1" onclick="responder(this, false)"> Un lenguaje de programación</label>
+    </div>
+
+    <div class="pregunta">
+        <p>2. ¿Para qué sirve el símbolo rombo?</p>
+        <label><input type="radio" name="p2" onclick="responder(this, true)"> Tomar decisiones</label>
+        <label><input type="radio" name="p2" onclick="responder(this, false)"> Iniciar el proceso</label>
+        <label><input type="radio" name="p2" onclick="responder(this, false)"> Mostrar resultados</label>
+    </div>
+
+    <div class="pregunta">
+        <p>3. ¿Qué símbolo indica inicio y fin?</p>
+        <label><input type="radio" name="p3" onclick="responder(this, true)"> Óvalo</label>
+        <label><input type="radio" name="p3" onclick="responder(this, false)"> Rectángulo</label>
+        <label><input type="radio" name="p3" onclick="responder(this, false)"> Rombo</label>
+    </div>
+
+    <div class="pregunta">
+        <p>4. ¿Qué es el pseudocódigo?</p>
+        <label><input type="radio" name="p4" onclick="responder(this, true)"> Forma escrita de un algoritmo</label>
+        <label><input type="radio" name="p4" onclick="responder(this, false)"> Un diagrama</label>
+        <label><input type="radio" name="p4" onclick="responder(this, false)"> Un programa compilado</label>
+    </div>
+
+    <div class="pregunta">
+        <p>5. ¿Qué programa se usó para pseudocódigo?</p>
+        <label><input type="radio" name="p5" onclick="responder(this, false)"> NetBeans</label>
+        <label><input type="radio" name="p5" onclick="responder(this, false)"> Visual Studio</label>
+        <label><input type="radio" name="p5" onclick="responder(this, true)"> PSeInt</label>
+    </div>
+
+    <div class="pregunta">
+        <p>6. ¿En qué idioma está el pseudocódigo?</p>
+        <label><input type="radio" name="p6" onclick="responder(this, false)"> Java</label>
+        <label><input type="radio" name="p6" onclick="responder(this, false)"> Inglés</label>
+        <label><input type="radio" name="p6" onclick="responder(this, true)"> Español</label>
+    </div>
+
+    <div class="pregunta">
+        <p>7. ¿Qué es una metodología de software?</p>
+        <label><input type="radio" name="p7" onclick="responder(this, true)"> Conjunto de pasos para crear software</label>
+        <label><input type="radio" name="p7" onclick="responder(this, false)"> Un lenguaje</label>
+        <label><input type="radio" name="p7" onclick="responder(this, false)"> Un programa</label>
+    </div>
+
+    <div class="pregunta">
+        <p>8. ¿Para qué sirven las metodologías?</p>
+        <label><input type="radio" name="p8" onclick="responder(this, false)"> Escribir código</label>
+        <label><input type="radio" name="p8" onclick="responder(this, true)"> Organizar y reducir errores</label>
+        <label><input type="radio" name="p8" onclick="responder(this, false)"> Diseñar pantallas</label>
+    </div>
+
+    <div class="pregunta">
+        <p>9. ¿Qué usuario tiene todos los permisos?</p>
+        <label><input type="radio" name="p9" onclick="responder(this, false)"> Usuario estándar</label>
+        <label><input type="radio" name="p9" onclick="responder(this, false)"> Invitado</label>
+        <label><input type="radio" name="p9" onclick="responder(this, true)"> Administrador</label>
+    </div>
+
+    <div class="pregunta">
+        <p>10. ¿Qué usuario solo consulta información?</p>
+        <label><input type="radio" name="p10" onclick="responder(this, false)"> Administrador</label>
+        <label><input type="radio" name="p10" onclick="responder(this, true)"> Invitado</label>
+        <label><input type="radio" name="p10" onclick="responder(this, false)"> Programador</label>
+    </div>
+
+    <div class="resultado" id="resultado">
+        Calificación: 0 / 10
+    </div>
+    <button onclick="terminarCuestionario()">Terminar cuestionario</button>
+
+    <div class="resultado" id="mensajeFinal"></div>
+
+</section>
+
+
+</section>
+
+<section id="parcial2">
+    <h2>2<sup>do</sup> Parcial</h2>
+    <h3>Diseño Punto de venta</h3>
+    <p>
+        En el segundo parcial de esta materia vimos el diseño de cómo
+        realizar un punto de venta. Aprendimos cómo se compone y qué
+        elementos debe llevar, dependiendo de las necesidades del
+        cliente.
+    </p>
+
+    <p>
+        El sistema debía contar con dos secciones principales:
+        <strong>Usuario</strong> y <strong>Tipo de Usuario</strong>.
+        En estas secciones se registraban los datos del usuario, como
+        nombre completo y demás información general, así como la
+        función que desempeñaba dentro del sistema.
+    </p>
+
+    <p>
+        Los tipos de usuario podían ser gerente, administrador,
+        cajero o empleado. Cada uno contaba con diferentes permisos
+        y alcances dentro del programa, ya que no todos podían
+        acceder a las mismas funciones.
+    </p>
+
+    <p>
+        Para el diseño del punto de venta utilizamos la aplicación
+        <strong>Balsamiq</strong>, la cual nos permitió realizar un
+        maquetado más claro, ordenado y detallado antes de comenzar
+        con la programación.
+    </p>
+
+    <div class="Mosa-Pseudo">
+        <img src="Maquetado1.jpg" alt="Maquetado">
+        <img src="Maquetado2.jpg" alt="Maquetado">
+        <img src="Maquetado3.jpg" alt="Maquetado">
+    </div>
+    <p>Este es un ejemplo sencillo del maquetado de nuestro punto de venta realizado a mano.</p>
+</section>
+
+<section id="parcial3">
+    <h2>3<sup>er</sup> Parcial</h2>
+    <h3>Bases de Datos</h3>
+    <p>
+    Una base de datos es un conjunto organizado de información que se
+    almacena de forma estructurada para facilitar su acceso, consulta
+    y actualización. Se utilizan para guardar datos de usuarios,
+    productos, ventas, calificaciones y muchos otros elementos.
+    </p>
+
+    <p>
+    Las bases de datos permiten trabajar con grandes cantidades de
+    información de manera segura y eficiente. Son fundamentales en
+    sistemas como puntos de venta, aplicaciones web y sistemas escolares.
+    </p>
+
+    <img src="basededatos.png" alt="Ejemplo de base de datos" class="img-tema">
+
+    <p>
+    Algunos ejemplos de gestores de bases de datos son:
+    </p>
+
+    <ul>
+        <li>MySQL</li>
+        <li>SQL Server</li>
+        <li>Oracle</li>
+        <li>PostgreSQL</li>
+    </ul>
+    <h3>¿Qué es la programación orientada a objetos?</h3>
+    <p>
+        La programación orientada a objetos (POO) es un paradigma de
+        programación que organiza el software en objetos. Cada objeto
+        representa algo del mundo real y contiene datos y acciones.
+    </p>
+
+    <p>
+        La POO se basa en cuatro principios fundamentales:
+    </p>
+
+    <ul>
+        <li><strong>Encapsulamiento:</strong> protege los datos del objeto.</li>
+        <li><strong>Herencia:</strong> permite reutilizar código.</li>
+        <li><strong>Polimorfismo:</strong> un objeto puede comportarse de diferentes formas.</li>
+        <li><strong>Abstracción:</strong> muestra solo lo necesario.</li>
+    </ul>
+    <div class="Mosa-Pseudo">
+    <img src="POO.png" alt="Ejemplo de Programación Orientada a Objetos" class="img-tema">
+    </div>
+    <p>Este video habla sobre lo anterior</p>
+    <div class="video-contenedor">
+        <iframe 
+            src="https://www.youtube.com/embed/SI7O81GMG2A"
+            title="POO"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <button class="btn-iniciar" onclick="mostrarCuestionarioBD()">
+        Iniciar cuestionario 
+    </button>
+    <section id="cuestionarioBD" style="display:none;">
+    <h3>Cuestionario - Base de Datos y POO</h3>
+
+    <div class="pregunta">
+        <p>1. ¿Qué es una base de datos?</p>
+        <label><input type="radio" name="q1" onclick="responderBD(this,true)"> Conjunto organizado de información</label>
+        <label><input type="radio" name="q1" onclick="responderBD(this,false)"> Un editor de texto</label>
+        <label><input type="radio" name="q1" onclick="responderBD(this,false)"> Un lenguaje</label>
+    </div>
+
+    <div class="pregunta">
+        <p>2. ¿Para qué sirven las bases de datos?</p>
+        <label><input type="radio" name="q2" onclick="responderBD(this,true)"> Guardar y administrar información</label>
+        <label><input type="radio" name="q2" onclick="responderBD(this,false)"> Diseñar páginas</label>
+        <label><input type="radio" name="q2" onclick="responderBD(this,false)"> Crear videos</label>
+    </div>
+
+    <div class="pregunta">
+        <p>3. ¿Cuál es un gestor de base de datos?</p>
+        <label><input type="radio" name="q3" onclick="responderBD(this,true)"> MySQL</label>
+        <label><input type="radio" name="q3" onclick="responderBD(this,false)"> WordMySQL</label>
+        <label><input type="radio" name="q3" onclick="responderBD(this,false)"> Paint</label>
+    </div>
+
+    <div class="pregunta">
+        <p>4. ¿Qué significa POO?</p>
+        <label><input type="radio" name="q4" onclick="responderBD(this,false)"> Proceso Operativo Oficial</label>
+        <label><input type="radio" name="q4" onclick="responderBD(this,true)"> Programación Orientada a Objetos</label>
+        <label><input type="radio" name="q4" onclick="responderBD(this,false)"> Programa Ordenado</label>
+    </div>
+
+    <div class="pregunta">
+        <p>5. ¿Qué representa un objeto?</p>
+        <label><input type="radio" name="q5" onclick="responderBD(this,false)"> Un archivo</label>
+        <label><input type="radio" name="q5" onclick="responderBD(this,true)"> Algo del mundo real</label>
+        <label><input type="radio" name="q5" onclick="responderBD(this,false)"> Una carpeta</label>
+    </div>
+
+    <div class="pregunta">
+        <p>6. ¿Qué principio protege los datos?</p>
+        <label><input type="radio" name="q6" onclick="responderBD(this,true)"> Encapsulamiento</label>
+        <label><input type="radio" name="q6" onclick="responderBD(this,false)"> Herencia</label>
+        <label><input type="radio" name="q6" onclick="responderBD(this,false)"> Abstracción</label>
+    </div>
+
+    <div class="pregunta">
+        <p>7. ¿Qué permite reutilizar código?</p>
+        <label><input type="radio" name="q7" onclick="responderBD(this,true)"> Herencia</label>
+        <label><input type="radio" name="q7" onclick="responderBD(this,false)"> Polimorfismo</label>
+        <label><input type="radio" name="q7" onclick="responderBD(this,false)"> Encapsulamiento</label>
+    </div>
+
+    <div class="pregunta">
+        <p>8. ¿Qué principio permite comportamientos distintos?</p>
+        <label><input type="radio" name="q8" onclick="responderBD(this,false)"> Abstracción</label>
+        <label><input type="radio" name="q8" onclick="responderBD(this,false)"> Herencia</label>
+        <label><input type="radio" name="q8" onclick="responderBD(this,true)"> Polimorfismo</label>
+    </div>
+
+    <div class="pregunta">
+        <p>9. ¿Qué muestra solo lo necesario?</p>
+        <label><input type="radio" name="q9" onclick="responderBD(this,true)"> Abstracción</label>
+        <label><input type="radio" name="q9" onclick="responderBD(this,false)"> Herencia</label>
+        <label><input type="radio" name="q9" onclick="responderBD(this,false)"> Polimorfismo</label>
+    </div>
+
+    <div class="pregunta">
+        <p>10. ¿Dónde se usa la POO?</p>
+        <label><input type="radio" name="q10" onclick="responderBD(this,true)"> En la mayoría de programas modernos</label>
+        <label><input type="radio" name="q10" onclick="responderBD(this,false)"> Solo en bases de datos</label>
+        <label><input type="radio" name="q10" onclick="responderBD(this,false)"> Solo en videojuegos</label>
+    </div>
+
+    <div class="resultado" id="resultadoBD">
+        Calificación: 0 / 10
+    </div>
+
+    <button onclick="terminarBD()">Terminar cuestionario</button>
+    <div class="resultado" id="mensajeFinalBD"></div>
+    </section>
+</section>
+
+<footer>
+    © 2026 CECyTEM Plantel Cuautitlán
+</footer>
+
+</div>
+<script>
+/* ===== CUESTIONARIO ===== */
+let puntos = 0;
+let respondidas = 0;
+
+function mostrarCuestionario() {
+    document.getElementById("cuestionario").style.display = "block";
+}
+
+
+function responder(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    let labels = pregunta.querySelectorAll("label");
+    labels.forEach(label => {
+        label.querySelector("input").disabled = true;
+        label.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntos++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidas++;
+    document.getElementById("resultado").innerText =
+        "Calificación: " + puntos + " / 10";
+}
+
+function terminarCuestionario() {
+    if (respondidas < 10) {
+        alert("⚠️ Contesta todas las preguntas antes de terminar.");
+        return;
+    }
+
+    let mensajeFinal = document.getElementById("mensajeFinal");
+    if (puntos >= 6) {
+        mensajeFinal.innerText =
+            "✅ Aprobado — Calificación final: " + puntos + " / 10";
+        mensajeFinal.style.color = "green";
+    } else {
+        mensajeFinal.innerText =
+            "❌ Reprobado — Calificación final: " + puntos + " / 10";
+        mensajeFinal.style.color = "red";
+    }
+
+    document.querySelectorAll("#cuestionario input")
+        .forEach(input => input.disabled = true);
+}
+
+
+
+let puntosBD = 0;
+let respondidasBD = 0;
+
+function mostrarCuestionarioBD() {
+    document.getElementById("cuestionarioBD").style.display = "block";
+}
+
+function responderBD(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosBD++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasBD++;
+    document.getElementById("resultadoBD").innerText =
+        "Calificación: " + puntosBD + " / 10";
+}
+
+function terminarBD() {
+    if (respondidasBD < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalBD");
+    if (puntosBD >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosBD + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosBD + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+/* ===== FECHA Y HORA ===== */
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    const fecha = ahora.toLocaleDateString("es-MX", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
+
+    const hora = ahora.toLocaleTimeString("es-MX");
+
+    document.getElementById("fecha").innerText = "Fecha: " + fecha;
+    document.getElementById("hora").innerText = "Hora: " + hora;
+}
+
+actualizarFechaHora();
+setInterval(actualizarFechaHora, 1000);
+</script>
+
+
+
+
+</body>
+</html>

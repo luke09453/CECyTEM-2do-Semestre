@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+table {
+    background: #008941;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
+    width: 100%;
+}
+
+td {
+    padding: 12px 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFD700; /* dorado para destacar */
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.7);
+}
+.encabezado {
+    animation: aparecerDesdeArriba 1.2s ease-out;
+}
+
+@keyframes aparecerDesdeArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenido img {
+    animation: zoomLogo 1.5s ease-in-out;
+}
+
+@keyframes zoomLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.texto {
+    animation: aparecerTexto 1.3s ease-out;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contenido img {
+    transition: transform 0.4s ease;
+}
+
+.contenido img:hover {
+    transform: scale(1.05);
+}

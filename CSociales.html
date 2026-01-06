@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Química - CECyTEM</title>
+    <link rel="stylesheet" href="Materias.css">
+</head>
+
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <nav class="sidebar">
+        <h2>Parciales</h2>
+        <a href="#parcial1">1<sup>er</sup> Parcial</a>
+        <a href="#parcial2">2<sup>do</sup> Parcial</a>
+        <a href="#parcial3">3<sup>er</sup> Parcial</a>
+        <div class="info-sidebar">
+            <p id="fecha"></p>
+            <p id="hora"></p>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="content">
+
+        <header>
+            <h1>Ciencias sociales</h1>
+            <p>Conoce como se maneja la sociedad hoy en dia</p>
+        </header>
+
+        <section id="parcial1">
+            <h2>1<sup>er</sup> Parcial</h2>
+            <h3>Economía y sus modelos</h3>
+            <p>La economía estudia cómo se producen, distribuyen y consumen los bienes y servicios en una sociedad. Existen diferentes modelos económicos que buscan organizar la producción y la distribución de recursos:</p>
+            <ul>
+                <li><strong>Economía de mercado:</strong> Las decisiones económicas dependen de la oferta y la demanda. Ejemplo: Estados Unidos.</li>
+                <li><strong>Economía planificada:</strong> El Estado controla la producción y distribución de bienes. Ejemplo: Cuba.</li>
+                <li><strong>Economía mixta:</strong> Combina mercado libre con intervención del Estado. Ejemplo: México.</li>
+            </ul>
+            <div class="Mosa-Pseudo">
+                <img src="Economia.jpg" alt="Balanaza con monedas">
+                <img src="Monedas.jpg" alt="Monedas">
+            </div>
+
+            <h3>Sectores económicos</h3>
+            <p>Los sectores económicos clasifican las actividades según la forma en que se producen los bienes y servicios:</p>
+            <ul>
+                <li><strong>Sector primario:</strong> Extracción directa de recursos naturales. Ejemplo: agricultura, pesca, minería.</li>
+                <li><strong>Sector secundario:</strong> Transformación de materias primas en productos elaborados. Ejemplo: industria textil, construcción.</li>
+                <li><strong>Sector terciario:</strong> Servicios para la sociedad. Ejemplo: transporte, comercio, educación.</li>
+                <li><strong>Sector cuaternario:</strong> Actividades relacionadas con el conocimiento y la tecnología. Ejemplo: investigación científica, informática.</li>
+                <li><strong>Sector quinario:</strong> Servicios especializados de alto nivel y toma de decisiones. Ejemplo: salud avanzada, educación superior.</li>
+            </ul>
+            <div class="Mosa-Pseudo">
+                <img src="Arbol.jpg" alt="Arbol">
+                <img src="Talado.jpg" alt="Troncos">
+                <img src="Muebles.jpg" alt="Muebles de madera">
+            </div>
+            <h3>Normas jurídicas</h3>
+            <p>Las normas jurídicas son reglas obligatorias creadas por el Estado para regular la conducta de las personas en sociedad. Su incumplimiento puede traer sanciones legales.</p>
+            <ul>
+                <li><strong>Ejemplo:</strong> Código Penal, Ley de Tránsito, Constitución.</li>
+                <li>Permiten mantener el orden y la justicia.</li>
+                <li>Garantizan derechos y establecen responsabilidades.</li>
+            </ul>
+
+            <h3>Servicios públicos</h3>
+            <p>Son aquellos servicios que el Estado proporciona a la ciudadanía para garantizar su bienestar y desarrollo.</p>
+            <ul>
+                <li><strong>Ejemplo:</strong> agua potable, electricidad, transporte público, salud, educación.</li>
+                <li>Algunos son gratuitos y otros con costo mínimo.</li>
+                <li>Buscan mejorar la calidad de vida de la población.</li>
+            </ul>
+            <div class="Mosa-Pseudo">
+                <img src="MetroBus.jpg" alt="Metro Bus">
+                <img src="Electricidad.jpg" alt="Torres de elecricidad">
+                <img src="Agua.jpg" alt="Agua">
+            </div>
+            <button class="btn-iniciar" onclick="mostrarcuestionarioEC()">
+                Iniciar cuestionario
+            </button>
+            <section id="cuestionarioEC" style="display:none;">
+                <h3>Cuestionario: Investigación Digital y HTML</h3>
+
+                <div class="pregunta">
+                <p>1. ¿Qué estudia la economía?</p>
+                <label><input type="radio" name="q1" onclick="responderEC(this, false)">
+                Los recursos naturales únicamente
+                </label>
+                <label><input type="radio" name="q1" onclick="responderECT(this, true)">
+                La administración de recursos para satisfacer necesidades
+                </label>
+                <label><input type="radio" name="q1" onclick="responderEC(this, false)">
+                La política de un país
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>2. Menciona un modelo económico y cómo funciona</p>
+                <label><input type="radio" name="q2" onclick="responderEC(this, false)">
+                Economía planificada: decisiones del mercado
+                </label>
+                <label><input type="radio" name="q2" onclick="responderEC(this, false)">
+                Economía de mercado: control total del Estado
+                </label>
+                <label><input type="radio" name="q2" onclick="responderEC(this, true)">
+                Economía mixta: combinación de mercado y Estado
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>3. Da un ejemplo de economía de mercado y de economía planificada:</p>
+                <label><input type="radio" name="q3" onclick="responderEC(this, true)">
+                Estados Unidos y Cuba
+                </label>
+                <label><input type="radio" name="q3" onclick="responderEC(this, false)">
+                Cuba y México
+                </label>
+                <label><input type="radio" name="q3" onclick="responderEC(this, false)">
+                Japón y Alemania
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>4. Diferencia entre sector primario y secundario:</p>
+                <label><input type="radio" name="q4" onclick="responderEC(this, true)">
+                Primario extrae recursos; secundario los transforma
+                </label>
+                <label><input type="radio" name="q4" onclick="responderEC(this, false)">
+                Primario transforma; secundario extrae
+                </label>
+                <label><input type="radio" name="q4" onclick="responderEC(this, false)">
+                Ambos transforman materias primas
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>5. Función principal del sector terciario:</p>
+                <label><input type="radio" name="q5" onclick="responderEC(this, true)">
+                Proveer servicios a la sociedad
+                </label>
+                <label><input type="radio" name="q5" onclick="responderEC(this, false)">
+                Extraer recursos naturales
+                </label>
+                <label><input type="radio" name="q5" onclick="responderEC(this, false)">
+                Transformar materias primas
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>6. Característica del sector cuaternario:</p>
+                <label><input type="radio" name="q6" onclick="responderEC(this, false)">
+                Proporciona servicios básicos
+                </label>
+                <label><input type="radio" name="q6" onclick="responderEC(this, false)">
+                Solo comercio y transporte
+                </label>
+                <label><input type="radio" name="q6" onclick="responderEC(this, true)">
+                Basado en conocimiento y tecnología
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>7. ¿Qué son las normas jurídicas?</p>
+                <label><input type="radio" name="q7" onclick="responderEC(this, true)">
+                Reglas obligatorias creadas por el Estado
+                </label>
+                <label><input type="radio" name="q7" onclick="responderEC(this, false)">
+                Sugerencias para la convivencia
+                </label>
+                <label><input type="radio" name="q7" onclick="responderEC(this, false)">
+                Leyes de otros países
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>8. Tipo de normas jurídicas con ejemplo:</p>
+                <label><input type="radio" name="q8" onclick="responderEC(this, false)">
+                Familiares: herencia
+                </label>
+                <label><input type="radio" name="q8" onclick="responderEC(this, true)">
+                Civiles: contratos y propiedad
+                </label>
+                <label><input type="radio" name="q8" onclick="responderEC(this, false)">
+                Laborales: vacaciones
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>9. ¿Qué son los servicios públicos?</p>
+                <label><input type="radio" name="q9" onclick="responderEC(this, true)">
+                Servicios que el Estado proporciona a la población
+                </label>
+                <label><input type="radio" name="q9" onclick="responderEC(this, false)">
+                Servicios que brindan empresas privadas
+                </label>
+                <label><input type="radio" name="q9" onclick="responderEC(this, false)">
+                Actividades de comercio informal
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>10. Ejemplos de servicios públicos:</p>
+                <label><input type="radio" name="q10" onclick="responderEC(this, true)">
+                Salud, educación y transporte
+                </label>
+                <label><input type="radio" name="q10" onclick="responderEC(this, false)">
+                Comercio, industrias y bancos
+                </label>
+                <label><input type="radio" name="q10" onclick="responderEC(this, false)">
+                Agricultura, minería y pesca
+                </label>
+                </div>
+
+                <div class="resultado" id="resultadoEC">
+                Calificación: 0 / 10
+                </div>
+
+                <button onclick="terminarEC()">Terminar cuestionario</button>
+                <div class="resultado" id="mensajeFinalEC"></div>
+
+            </section>
+        </section>
+
+        <section id="parcial2">
+            <h2>2<sup>do</sup> Parcial</h2>
+            <h3>Artículo 123 y su impacto en México</h3>
+            <p>El Artículo 123 de la Constitución Política de los Estados Unidos Mexicanos establece los derechos y obligaciones de los trabajadores y patrones, garantizando condiciones laborales justas y seguridad social. Es la base de la legislación laboral en México.</p>
+            <ul>
+                <li><strong>Derechos laborales:</strong> Jornada máxima de 8 horas, salario mínimo, vacaciones, descanso semanal.</li>
+                <li><strong>Condiciones de trabajo:</strong> Regulación de trabajo infantil, protección de mujeres y menores.</li>
+                <li><strong>Seguridad social:</strong> Prestaciones en caso de enfermedad, maternidad, riesgos de trabajo y jubilación.</li>
+                <li><strong>Impacto:</strong> Ha permitido mejorar las condiciones de los trabajadores y reducir abusos en la relación laboral.</li>
+            </ul>
+
+            <h3>Ley Federal del Trabajo</h3>
+            <p>La Ley Federal del Trabajo (LFT) regula las relaciones entre empleadores y trabajadores en México, detallando derechos, obligaciones y mecanismos de resolución de conflictos laborales.</p>
+            <ul>
+                <li><strong>Contratos de trabajo:</strong> Establece derechos y responsabilidades de ambas partes.</li>
+                <li><strong>Jornadas laborales:</strong> Regula horarios, descansos y horas extra.</li>
+                <li><strong>Salarios:</strong> Garantiza el pago mínimo y prestaciones.</li>
+                <li><strong>Seguridad y salud:</strong> Normas para proteger la integridad física de los trabajadores.</li>
+                <li><strong>Conflictos laborales:</strong> Procedimientos legales para resolver disputas entre empleados y patrones.</li>
+            </ul>
+            <div class="Mosa-Pseudo">
+                <img src="Trabajo.jpg" alt="Trabajo">
+            </div>
+            <h3>Movimientos sociales en México</h3>
+            <p>Los movimientos sociales son acciones colectivas que buscan promover cambios políticos, sociales o culturales en la sociedad. En México, han tenido gran relevancia en diferentes momentos históricos.</p>
+            <ul>
+                <li><strong>Movimiento estudiantil de 1968:</strong> Exigía democracia, libertades civiles y mejores condiciones educativas.</li>
+                <li><strong>Movimiento zapatista:</strong> Busca derechos para comunidades indígenas y justicia social.</li>
+                <li><strong>Movimiento feminista:</strong> Lucha por igualdad de género, derechos reproductivos y contra la violencia hacia mujeres.</li>
+                <li><strong>Movimiento laboral:</strong> Huelgas y protestas para mejorar salarios y condiciones de trabajo.</li>
+                <li><strong>Impacto:</strong> Estos movimientos han generado reformas legales, concienciación social y cambios en políticas públicas.</li>
+            </ul>
+            <div class="Mosa-Pseudo">
+                <img src="MovimientosSociales.jpg" alt="Mov. Social">
+                <img src="Marcha.jpg" alt="Marcha">
+            </div>
+        </section>
+
+        <section id="parcial3">
+            <h2>3<sup>er</sup> Parcial</h2>
+            <h3>Sistema Bancario</h3>
+                <p>El sistema bancario en México es el conjunto de instituciones financieras que permiten la intermediación de recursos entre ahorradores y personas o empresas que requieren crédito. Garantiza la seguridad de los depósitos y promueve el desarrollo económico.</p>
+                <ul>
+                    <li><strong>Funciones principales:</strong> Captar depósitos, otorgar créditos, facilitar pagos y transferencias.</li>
+                    <li><strong>Tipos de bancos:</strong> Comerciales, de desarrollo y de inversión.</li>
+                    <li><strong>Regulación:</strong> Supervisados por la Comisión Nacional Bancaria y de Valores (CNBV) y el Banco de México.</li>
+                    <li><strong>Importancia:</strong> Facilita el ahorro, financiamiento de proyectos y estabilidad económica.</li>
+                </ul>
+                <div class="Mosa-Pseudo">
+                    <img src="Banco.jpg" alt="Sistema Bancario">
+                    <img src="Mundo.jpg" alt="Mundo y economia">
+                </div>
+                <h3>G7</h3>
+                <p>El G7 es un grupo de países industrializados que coordina políticas económicas, financieras y comerciales a nivel global. México no es miembro, pero sus decisiones impactan la economía mundial.</p>
+                <ul>
+                    <li><strong>Miembros:</strong> Canadá, Francia, Alemania, Italia, Japón, Reino Unido y Estados Unidos.</li>
+                    <li><strong>Objetivos:</strong> Promover crecimiento económico, estabilidad financiera y cooperación internacional.</li>
+                    <li><strong>Temas tratados:</strong> Comercio, medio ambiente, cambio climático, innovación tecnológica y seguridad global.</li>
+                    <li><strong>Impacto en México:</strong> Influye en comercio exterior, inversión extranjera y políticas económicas.</li>
+                </ul>
+                <div class="Mosa-Pseudo">
+                    <img src="G7.jpg" alt="Los 7 paises">
+                </div>
+                <h3>Transformaciones sociales e institucionales</h3>
+                <p>Se refiere a los cambios que han ocurrido en la sociedad mexicana y en sus instituciones a lo largo del tiempo, buscando modernización, inclusión y mejor funcionamiento del Estado.</p>
+                <ul>
+                    <li><strong>Transformaciones sociales:</strong> Urbanización, migración, cambios en la familia, educación y participación ciudadana.</li>
+                    <li><strong>Transformaciones institucionales:</strong> Reformas políticas, judiciales y administrativas que fortalecen la democracia y el Estado de derecho.</li>
+                    <li><strong>Ejemplos:</strong> Reforma educativa, modernización del sistema electoral, expansión de la seguridad social.</li>
+                    <li><strong>Importancia:</strong> Permite a la sociedad adaptarse a retos contemporáneos y mejorar la calidad de vida de la población.</li>
+                </ul>
+        </section>
+
+        <footer>
+            © 2026 CECyTEM Plantel Cuautitlán - Página informativa
+        </footer>
+
+    </div>
+<script>
+let puntosEC = 0;
+let respondidasEC = 0;
+function mostrarcuestionarioEC() {
+    document.getElementById("cuestionarioEC").style.display = "block";
+}
+
+function responderEC(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosEC++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasEC++;
+
+    document.getElementById("resultadoEC").innerText =
+        "Calificación: " + puntosEC + " / 10";
+}
+
+function terminarEC() {
+    if (respondidasEC < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalEC"); 
+    if (puntosEC >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosEC + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosEC + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+//hORA Y FECHA
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    const fecha = ahora.toLocaleDateString("es-MX", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
+
+    const hora = ahora.toLocaleTimeString("es-MX");
+
+    document.getElementById("fecha").innerText = "Fecha: " + fecha;
+    document.getElementById("hora").innerText = "Hora: " + hora;
+}
+actualizarFechaHora();
+setInterval(actualizarFechaHora, 1000);
+</script>
+</body>
+</html>

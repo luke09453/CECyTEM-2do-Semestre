@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Química - CECyTEM</title>
+    <link rel="stylesheet" href="Materias.css">
+</head>
+
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <nav class="sidebar">
+        <h2>Parciales</h2>
+        <a href="#parcial1">1<sup>er</sup> Parcial</a>
+        <a href="#parcial2">2<sup>do</sup> Parcial</a>
+        <a href="#parcial3">3<sup>er</sup> Parcial</a>
+        <div class="info-sidebar">
+            <p id="fecha"></p>
+            <p id="hora"></p>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="content">
+
+        <header>
+            <h1>Cultura Digital</h1>
+            <p>Aprende como se maneja la combinacion de colore y entre otras cosas...</p>
+        </header>
+
+        <section id="parcial1">
+            <h2>1<sup>er</sup> Parcial</h2>
+            <h3>Teoría del color</h3>
+
+            <p>
+            La teoría del color es un conjunto de principios que explican cómo se forman,
+            combinan y perciben los colores. Es muy utilizada en el arte, el diseño gráfico,
+            la pintura, la publicidad y el diseño web, ya que los colores influyen en las
+            emociones y en la forma en que interpretamos la información visual.
+            </p>
+            <div class="Mosa-Pseudo">
+            <img src="TeoriaDelColor.png" alt="Teoría del color">
+            </div>
+            <p>
+            Los colores se organizan en el círculo cromático, el cual muestra la relación
+            entre ellos y ayuda a crear combinaciones visualmente agradables.
+            </p>
+
+            <h4>Colores primarios</h4>
+            <p>
+            Los colores primarios son aquellos que no se pueden obtener mezclando otros
+            colores. A partir de ellos se crean todos los demás:
+            </p>
+            <ul>
+                <li>Rojo</li>
+                <li>Amarillo</li>
+                <li>Azul</li>
+            </ul>
+
+            <h4>Colores secundarios</h4>
+            <p>
+            Los colores secundarios se obtienen al mezclar dos colores primarios:
+            </p>
+            <ul>
+                <li>Rojo + Amarillo = Naranja</li>
+                <li>Amarillo + Azul = Verde</li>
+                <li>Azul + Rojo = Violeta</li>
+            </ul>
+
+            <h4>Colores terciarios</h4>
+            <p>
+            Los colores terciarios surgen de la mezcla de un color primario con un color
+            secundario cercano en el círculo cromático.
+            </p>
+
+            <h4>Colores cálidos y fríos</h4>
+            <p>
+            Los colores cálidos como el rojo, naranja y amarillo transmiten energía, calor
+            y alegría. Por otro lado, los colores fríos como el azul, verde y violeta
+            transmiten calma, tranquilidad y frescura.
+            </p>
+
+            <h4>Colores neutros</h4>
+            <p>
+            Los colores neutros como el blanco, negro y gris ayudan a equilibrar las
+            composiciones y a resaltar otros colores.
+            </p>
+
+            <h4>Importancia de la teoría del color</h4>
+            <p>
+            La teoría del color es importante porque permite comunicar emociones, mejorar
+            la estética visual y transmitir mensajes de forma clara y efectiva.
+            </p>
+            <h3>Círculo cromático</h3>
+
+            <p>
+            El círculo cromático es una representación gráfica que organiza los colores
+            de manera circular según su relación. Se utiliza para comprender cómo se
+            combinan los colores y para crear armonías visuales en el arte, el diseño y
+            la pintura.
+            </p>
+
+            <div class="Mosa-Pseudo">
+                <img src="Circulo.jpg" alt="Círculo cromático">
+            </div>
+
+            <p>
+            En el círculo cromático se pueden identificar los colores primarios,
+            secundarios y terciarios, lo que facilita la elección de combinaciones
+            adecuadas según el efecto visual que se quiera lograr.
+            </p>
+
+            <h4>Colores primarios</h4>
+            <p>
+            Son los colores base del círculo cromático y no se pueden obtener a partir
+            de otros colores:
+            </p>
+            <ul>
+                <li>Rojo</li>
+                <li>Amarillo</li>
+                <li>Azul</li>
+            </ul>
+
+            <h4>Colores secundarios</h4>
+            <p>
+            Se forman al mezclar dos colores primarios en partes iguales:
+            </p>
+            <ul>
+                <li>Naranja</li>
+                <li>Verde</li>
+                <li>Violeta</li>
+            </ul>
+
+            <h4>Colores terciarios</h4>
+            <p>
+            Son el resultado de mezclar un color primario con un color secundario cercano
+            dentro del círculo cromático, dando lugar a tonos intermedios.
+            </p>
+
+            <h4>Colores complementarios</h4>
+            <p>
+            Los colores complementarios son aquellos que se encuentran opuestos dentro
+            del círculo cromático. Al combinarse generan un fuerte contraste visual,
+            por ejemplo: rojo y verde, azul y naranja, amarillo y violeta.
+            </p>
+
+            <h4>Uso del círculo cromático</h4>
+            <p>
+            El círculo cromático es una herramienta fundamental para elegir combinaciones
+            de colores armoniosas, transmitir emociones y mejorar la estética visual en
+            cualquier diseño.
+            </p>
+            <button class="btn-iniciar" onclick="mostrarcuestionario()">
+                Iniciar cuestionario
+            </button>
+            <section id="cuestionario" style="display:none;">
+                <h3>Cuestionario: Teoría del color</h3>
+
+                <div class="pregunta">
+                    <p>1. ¿Qué es la teoría del color?</p>
+                    <label><input type="radio" name="c1" onclick="responderTC(this, true)"> Conjunto de principios sobre cómo se combinan y perciben los colores</label>
+                    <label><input type="radio" name="c1" onclick="responderTC(this, false)"> Un lenguaje de programación</label>
+                    <label><input type="radio" name="c1" onclick="responderTC(this, false)"> Un tipo de base de datos</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>2. ¿En qué áreas se utiliza la teoría del color?</p>
+                    <label><input type="radio" name="c2" onclick="responderTC(this, true)"> Arte, diseño, publicidad y diseño web</label>
+                    <label><input type="radio" name="c2" onclick="responderTC(this, false)"> Matemáticas y física</label>
+                    <label><input type="radio" name="c2" onclick="responderTC(this, false)"> Redes de computadoras</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>3. ¿Cuáles son los colores primarios?</p>
+                    <label><input type="radio" name="c3" onclick="responderTC(this, true)"> Rojo, amarillo y azul</label>
+                    <label><input type="radio" name="c3" onclick="responderTC(this, false)"> Verde, naranja y violeta</label>
+                    <label><input type="radio" name="c3" onclick="responderTC(this, false)"> Blanco, negro y gris</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>4. ¿Cómo se obtiene el color verde?</p>
+                    <label><input type="radio" name="c4" onclick="responderTC(this, true)"> Mezclando amarillo y azul</label>
+                    <label><input type="radio" name="c4" onclick="responderTC(this, false)"> Mezclando rojo y azul</label>
+                    <label><input type="radio" name="c4" onclick="responderTC(this, false)"> Mezclando rojo y amarillo</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>5. ¿Qué es el círculo cromático?</p>
+                    <label><input type="radio" name="c5" onclick="responderTC(this, true)"> Representación gráfica de la relación entre los colores</label>
+                    <label><input type="radio" name="c5" onclick="responderTC(this, false)"> Un tipo de gráfico estadístico</label>
+                    <label><input type="radio" name="c5" onclick="responderTC(this, false)"> Un programa de edición</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>6. ¿Qué colores se consideran secundarios?</p>
+                    <label><input type="radio" name="c6" onclick="responderTC(this, true)"> Naranja, verde y violeta</label>
+                    <label><input type="radio" name="c6" onclick="responderTC(this, false)"> Rojo, azul y amarillo</label>
+                    <label><input type="radio" name="c6" onclick="responderTC(this, false)"> Blanco, negro y gris</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>7. ¿Qué colores se consideran cálidos?</p>
+                    <label><input type="radio" name="c7" onclick="responderTC(this, true)"> Rojo, naranja y amarillo</label>
+                    <label><input type="radio" name="c7" onclick="responderTC(this, false)"> Azul, verde y violeta</label>
+                    <label><input type="radio" name="c7" onclick="responderTC(this, false)"> Blanco, negro y gris</label>
+                </div>
+
+
+                <div class="pregunta">
+                    <p>8. ¿Cuál es un ejemplo de colores fríos?</p>
+                    <label><input type="radio" name="c8" onclick="responderTC(this, true)"> Azul y verde</label>
+                    <label><input type="radio" name="c8" onclick="responderTC(this, false)"> Rojo y amarillo</label>
+                    <label><input type="radio" name="c8" onclick="responderTC(this, false)"> Naranja y rojo</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>9. ¿Qué son los colores complementarios?</p>
+                    <label><input type="radio" name="c9" onclick="responderTC(this, true)"> Colores opuestos en el círculo cromático</label>
+                    <label><input type="radio" name="c9" onclick="responderTC(this, false)"> Colores iguales</label>
+                    <label><input type="radio" name="c9" onclick="responderTC(this, false)"> Colores neutros</label>
+                </div>
+
+                <div class="pregunta">
+                    <p>10. ¿Para qué sirve el círculo cromático?</p>
+                    <label><input type="radio" name="c10" onclick="responderTC(this, true)"> Crear combinaciones de colores armoniosas</label>
+                    <label><input type="radio" name="c10" onclick="responderTC(this, false)"> Programar aplicaciones</label>
+                    <label><input type="radio" name="c10" onclick="responderTC(this, false)"> Diseñar bases de datos</label>
+                </div>
+                <div class="resultado" id="resultadoTC">
+                    Calificación: 0 / 10
+                </div>
+                <button onclick="terminarTC()">Terminar cuestionario</button>
+                <div class="resultado" id="mensajeFinalTC"></div>
+
+
+            </section>
+
+        </section>
+
+        <section id="parcial2">
+            <h2>2<sup>do</sup> Parcial</h2>
+            <h3>Técnicas de Investigación Digital</h3>
+
+            <p>
+                Las técnicas de investigación digital son métodos que utilizan herramientas
+                tecnológicas y recursos en línea para buscar, analizar, verificar y organizar
+                información de manera eficiente. Son fundamentales en el ámbito académico,
+                profesional y educativo.
+            </p>
+
+            <h4>¿Para qué sirven?</h4>
+            <ul>
+                <li>Obtener información confiable y actualizada.</li>
+                <li>Analizar grandes cantidades de datos.</li>
+                <li>Verificar la veracidad de las fuentes digitales.</li>
+                <li>Optimizar el tiempo de investigación.</li>
+            </ul>
+
+            <div class="Mosa-Pseudo">
+                <img src="MotoresDEBusqueda.jpg" alt="Motores de busqueda">
+            </div>
+
+            <h4>Principales técnicas de investigación digital</h4>
+
+            <h4>1. Búsqueda avanzada en la web</h4>
+            <p>
+                Consiste en el uso de operadores de búsqueda (como comillas, signos + y -,
+                o filtros por fecha) para encontrar información más precisa en buscadores
+                como Google.
+            </p>
+
+            <h4>2. Evaluación de fuentes digitales</h4>
+            <p>
+                Permite determinar si una fuente es confiable, revisando aspectos como:
+                autor, fecha de publicación, dominio del sitio y referencias utilizadas.
+            </p>
+
+            <h4>3. Uso de bases de datos académicas</h4>
+            <p>
+                Implica consultar plataformas especializadas como Google Scholar, Redalyc
+                o SciELO, donde se encuentran artículos científicos y académicos verificados.
+            </p>
+
+            <h4>4. Análisis de contenido digital</h4>
+            <p>
+                Se basa en examinar textos, imágenes, videos y publicaciones en redes
+                sociales para identificar patrones, ideas principales y tendencias.
+            </p>
+
+            <h4>5. Organización de la información</h4>
+            <p>
+                Consiste en clasificar y guardar la información utilizando herramientas
+                digitales como documentos en la nube, gestores de referencias o notas digitales.
+            </p>
+
+            <h4>6. Verificación de la información</h4>
+                <p>
+                Es el proceso de comprobar la veracidad de los datos comparándolos con
+                distintas fuentes confiables para evitar información falsa o errónea.
+            </p>
+
+            <h4>Importancia de la investigación digital</h4>
+            <p>
+                La investigación digital facilita el acceso al conocimiento, fomenta el
+                pensamiento crítico y permite desarrollar habilidades tecnológicas
+                indispensables en la era digital.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="LogosBusqueda.jpg" alt="Algunos Motores de busqueda">
+            </div>
+            <h3>HTML y sus etiquetas</h3>
+
+            <p>
+                HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para
+                crear la estructura de las páginas web. Permite organizar el contenido
+                mediante etiquetas que indican al navegador cómo mostrar la información.
+            </p>
+            <div class="Mosa-Pseudo">
+                <img src="LogoHTML.png" alt="LogoHTML">
+                <img src="Codigo.jpg" alt="Ejemplo Codigo HTML">
+                <img src="AnimacionHTML.png" alt="Dibujo de html">
+            </div>
+            <h4>¿Para qué sirve HTML?</h4>
+            <ul>
+                <li>Crear la estructura básica de una página web.</li>
+                <li>Organizar textos, imágenes, enlaces y formularios.</li>
+                <li>Definir títulos, párrafos y secciones.</li>
+                <li>Servir como base para CSS y JavaScript.</li>
+            </ul>
+
+            <h4>¿Qué son las etiquetas HTML?</h4>
+            <p>
+                Las etiquetas HTML son instrucciones que se escriben entre los signos
+                &lt; &gt;. Generalmente se usan en pares: una etiqueta de apertura y
+                otra de cierre, aunque algunas no necesitan cierre.
+            </p>
+
+            <h4>Estructura básica de un documento HTML</h4>
+            <ul>
+                <li><strong>&lt;html&gt;</strong>: Contiene todo el documento.</li>
+                <li><strong>&lt;head&gt;</strong>: Información general del documento.</li>
+                <li><strong>&lt;body&gt;</strong>: Contenido visible de la página.</li>
+            </ul>
+
+            <h4>Etiquetas HTML más utilizadas</h4>
+
+            <ul>
+                <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong>: Títulos y subtítulos.</li>
+                <li><strong>&lt;p&gt;</strong>: Párrafos de texto.</li>
+                <li><strong>&lt;a&gt;</strong>: Enlaces o hipervínculos.</li>
+                <li><strong>&lt;img&gt;</strong>: Imágenes.</li>
+                <li><strong>&lt;ul&gt;</strong>: Listas no ordenadas.</li>
+                <li><strong>&lt;ol&gt;</strong>: Listas ordenadas.</li>
+                <li><strong>&lt;li&gt;</strong>: Elementos de una lista.</li>
+                <li><strong>&lt;div&gt;</strong>: Contenedor de elementos.</li>
+                <li><strong>&lt;span&gt;</strong>: Contenedor en línea.</li>
+            </ul>
+
+            <h4>Etiquetas de formularios</h4>
+            <ul>
+                <li><strong>&lt;form&gt;</strong>: Contenedor del formulario.</li>
+                <li><strong>&lt;input&gt;</strong>: Campos de entrada.</li>
+                <li><strong>&lt;label&gt;</strong>: Etiquetas de texto para campos.</li>
+                <li><strong>&lt;button&gt;</strong>: Botones.</li>
+            </ul>
+
+            <h4>Etiquetas que no necesitan cierre</h4>
+            <ul>
+                <li><strong>&lt;br&gt;</strong>: Salto de línea.</li>
+                <li><strong>&lt;hr&gt;</strong>: Línea horizontal.</li>
+                <li><strong>&lt;img&gt;</strong>: Imagen.</li>
+                <li><strong>&lt;input&gt;</strong>: Campo de formulario.</li>
+            </ul>
+
+            <h4>Importancia de HTML</h4>
+            <p>
+                HTML es la base de toda página web. Sin HTML no existiría la estructura
+                del contenido, por lo que es fundamental para el desarrollo web y el
+                aprendizaje de tecnologías digitales.
+            </p>
+            <button class="btn-iniciar" onclick="mostrarcuestionarioHT()">
+                Iniciar cuestionario
+            </button>
+            <section id="cuestionarioHT" style="display:none;">
+                <h3>Cuestionario: Investigación Digital y HTML</h3>
+
+                <div class="pregunta">
+                <p>1. ¿Qué son las técnicas de investigación digital?</p>
+                <label><input type="radio" name="q1" onclick="responderHT(this, false)">
+                Programas de edición de imágenes
+                </label>
+                <label><input type="radio" name="q1" onclick="responderHT(this, true)">
+                 Métodos que usan herramientas tecnológicas para investigar información
+                </label>
+                <label><input type="radio" name="q1" onclick="responderHT(this, false)">
+                Lenguajes de programación
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>2. ¿Cuál es una base de datos académica?</p>
+                <label><input type="radio" name="q2" onclick="responderHT(this, false)">
+                TikTok
+                </label>
+                <label><input type="radio" name="q2" onclick="responderHT(this, false)">
+                Facebook
+                </label>
+                <label><input type="radio" name="q2" onclick="responderHT(this, true)">
+                Google Scholar
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>3. ¿Qué se revisa para evaluar una fuente digital?</p>
+                <label><input type="radio" name="q3" onclick="responderHT(this, true)">
+                Autor, fecha y dominio
+                </label>
+                <label><input type="radio" name="q3" onclick="responderHT(this, false)">
+                Solo imágenes
+                </label>
+                <label><input type="radio" name="q3" onclick="responderHT(this, false)">
+                Colores del sitio
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>4. ¿Qué significa HTML?</p>
+                <label><input type="radio" name="q4" onclick="responderHT(this, true)">
+                HyperText Markup Language
+                </label>
+                <label><input type="radio" name="q4" onclick="responderHT(this, false)">
+                HyperText Machine Language
+                </label>
+                <label><input type="radio" name="q4" onclick="responderHT(this, false)">
+                HighText Markup Language
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>5. ¿Para qué sirve HTML?</p>
+                <label><input type="radio" name="q5" onclick="responderHT(this, true)">
+                Crear la estructura de una página web
+                </label>
+                <label><input type="radio" name="q5" onclick="responderHT(this, false)">
+                Dar estilos visuales
+                </label>
+                <label><input type="radio" name="q5" onclick="responderHT(this, false)">
+                Programar bases de datos
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>6. ¿Qué etiqueta contiene el contenido visible?</p>
+                <label><input type="radio" name="q6" onclick="responderHT(this, false)">
+                &lt;html&gt;
+                </label>
+                <label><input type="radio" name="q6" onclick="responderHT(this, false)">
+                &lt;head&gt;
+                </label>
+                <label><input type="radio" name="q6" onclick="responderHT(this, true)">
+                &lt;body&gt;
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>7. ¿Qué etiqueta se usa para párrafos?</p>
+                <label><input type="radio" name="q7" onclick="responderHT(this, true)">
+                &lt;p&gt;
+                </label>
+                <label><input type="radio" name="q7" onclick="responderHT(this, false)">
+                &lt;div&gt;
+                </label>
+                <label><input type="radio" name="q7" onclick="responderHT(this, false)">
+                &lt;h1&gt;
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>8. ¿Cuál etiqueta NO necesita cierre?</p>
+                <label><input type="radio" name="q8" onclick="responderHT(this, false)">
+                &lt;p&gt;
+                </label>
+                <label><input type="radio" name="q8" onclick="responderHT(this, true)">
+                &lt;img&gt;
+                </label>
+                <label><input type="radio" name="q8" onclick="responderHT(this, false)">
+                &lt;div&gt;
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>9. ¿Para qué sirve la verificación de información?</p>
+                <label><input type="radio" name="q9" onclick="responderHT(this, true)">
+                Comprobar que los datos sean verdaderos
+                </label>
+                <label><input type="radio" name="q9" onclick="responderHT(this, false)">
+                    Copiar información
+                </label>
+                <label><input type="radio" name="q9" onclick="responderHT(this, false)">
+                Publicar en redes sociales
+                </label>
+                </div>
+
+                <div class="pregunta">
+                <p>10. ¿Qué etiqueta se usa para enlaces?</p>
+                <label><input type="radio" name="q10" onclick="responderHT(this, true)">
+                &lt;a&gt;
+                </label>
+                <label><input type="radio" name="q10" onclick="responderHT(this, false)">
+                &lt;img&gt;
+                </label>
+                <label><input type="radio" name="q10" onclick="responderHT(this, false)">
+                &lt;span&gt;
+                </label>
+                </div>
+
+                <div class="resultado" id="resultadoHT">
+                Calificación: 0 / 10
+                </div>
+
+                <button onclick="terminarHT()">Terminar cuestionario</button>
+                <div class="resultado" id="mensajeFinalHT"></div>
+
+            </section>
+        </section>
+
+        <section id="parcial3">
+            <h2>3<sup>er</sup> Parcial</h2>
+            <h3>Tipos de redes</h3>
+        <div class="Mosa-Pseudo">    
+        <img src="redes.jpg" alt="Tipos de redes">
+        </div>    
+        <p>
+        Las redes son sistemas que permiten la comunicación y el intercambio de información
+        entre dispositivos o personas. Existen diferentes tipos de redes, clasificadas según
+        su alcance, uso y finalidad.
+        </p>
+
+        <ul>
+        <li>
+            <strong>LAN (Red de Área Local):</strong>
+            Es una red que conecta dispositivos en un espacio pequeño, como una casa,
+            escuela u oficina. Permite compartir archivos, impresoras y acceso a internet.
+        </li>
+        <li>
+            <strong>MAN (Red de Área Metropolitana):</strong>
+            Cubre un área más grande, como una ciudad. Se utiliza para conectar varias
+            redes LAN entre sí.
+        </li>
+        <li>
+            <strong>WAN (Red de Área Amplia):</strong>
+            Abarca grandes distancias, incluso países o continentes. El mejor ejemplo es
+            Internet.
+        </li>
+        <li>
+        <strong>Redes sociales:</strong>
+        Son plataformas digitales que permiten la comunicación e interacción entre
+        personas, como Facebook, Instagram, WhatsApp y TikTok.
+            </li>
+        </ul>
+
+        <h3>Difusión digital</h3>
+        <div class="Mosa-Pseudo">
+        <img src="difusion.jpg" alt="Difusión digital">
+        </div>
+        <p>
+        La difusión digital es el proceso de compartir información, contenido o mensajes a
+        través de medios digitales como internet, redes sociales, sitios web y aplicaciones.
+        Su objetivo principal es llegar a un público amplio de manera rápida y efectiva.
+        </p>
+
+        <p>
+        Este tipo de difusión se utiliza en la educación, la publicidad, los medios de
+        comunicación y las empresas para informar, promocionar productos o transmitir ideas.
+        </p>
+
+    <ul>
+        <li>
+            <strong>Redes sociales:</strong>
+            Son el medio más utilizado para la difusión digital, ya que permiten compartir
+            contenido en tiempo real.
+        </li>
+        <li>
+            <strong>Páginas web y blogs:</strong>
+            Sirven para publicar información detallada y organizada.
+        </li>
+            <li>
+                <strong>Correo electrónico:</strong>
+                Se usa para enviar información directa a personas o grupos específicos.
+            </li>
+            <li>
+                <strong>Videos y multimedia:</strong>
+                Plataformas como YouTube facilitan la difusión visual y educativa.
+            </li>
+        </ul>
+
+        <p>
+        La difusión digital es importante porque permite un acceso rápido a la información,
+        reduce costos y facilita la comunicación a nivel global.
+        </p>
+        </section>
+
+        <footer>
+            © 2026 CECyTEM Plantel Cuautitlán - Página informativa
+        </footer>
+
+    </div>
+<script>
+let puntosTC = 0;
+let respondidasTC = 0;
+function mostrarcuestionario() {
+    document.getElementById("cuestionario").style.display = "block";
+}
+
+function responderTC(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosTC++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasTC++;
+
+    document.getElementById("resultadoTC").innerText =
+        "Calificación: " + puntosTC + " / 10";
+}
+
+function terminarTC() {
+    if (respondidasTC < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalTC"); 
+    if (puntosTC >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosTC + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosTC + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+let puntosHT = 0;
+let respondidasHT = 0;
+function mostrarcuestionarioHT() {
+    document.getElementById("cuestionarioHT").style.display = "block";
+}
+
+function responderHT(opcion, correcta) {
+    let pregunta = opcion.closest(".pregunta");
+    if (pregunta.dataset.respondida === "true") return;
+    pregunta.dataset.respondida = "true";
+
+    pregunta.querySelectorAll("label").forEach(l => {
+        l.querySelector("input").disabled = true;
+        l.classList.remove("correcta", "incorrecta");
+    });
+
+    if (correcta) {
+        opcion.parentNode.classList.add("correcta");
+        puntosHT++;
+    } else {
+        opcion.parentNode.classList.add("incorrecta");
+    }
+
+    respondidasHT++;
+
+    document.getElementById("resultadoHT").innerText =
+        "Calificación: " + puntosHT + " / 10";
+}
+
+function terminarHT() {
+    if (respondidasHT < 10) {
+        alert("⚠️ Contesta todas las preguntas.");
+        return;
+    }
+
+    let mensaje = document.getElementById("mensajeFinalHT"); 
+    if (puntosHT >= 6) {
+        mensaje.innerText = "✅ Aprobado — " + puntosHT + " / 10";
+        mensaje.style.color = "green";
+    } else {
+        mensaje.innerText = "❌ Reprobado — " + puntosHT + " / 10";
+        mensaje.style.color = "red";
+    }
+}
+
+//Hora fecha
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    const fecha = ahora.toLocaleDateString("es-MX", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
+
+    const hora = ahora.toLocaleTimeString("es-MX");
+
+    document.getElementById("fecha").innerText = "Fecha: " + fecha;
+    document.getElementById("hora").innerText = "Hora: " + hora;
+}
+actualizarFechaHora();
+setInterval(actualizarFechaHora, 1000);
+</script>
+</body>
+</html>

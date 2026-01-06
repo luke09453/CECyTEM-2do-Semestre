@@ -1,0 +1,230 @@
+:root {
+    --verde-cecytem: #008941;
+    --verde-oscuro: #006B32;
+    --gris-fondo: #F2F2F2;
+    --blanco: #ffffff;
+    --negro: #222222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gris-fondo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    background: var(--verde-cecytem);
+    padding: 25px;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 28px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+}
+
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contenido img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+}
+
+.texto {
+    max-width: 700px;
+}
+
+.texto h2 {
+    color: var(--verde-oscuro);
+    border-left: 6px solid var(--verde-cecytem);
+    padding-left: 10px;
+}
+
+.texto p {
+    color: var(--negro);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.pie {
+    margin-top: 40px;
+    background: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 137, 65, 0.85),
+        rgba(0, 53, 25, 0.85)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login {
+    background: var(--blanco);
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    color: var(--verde-oscuro);
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login input:focus {
+    outline: none;
+    border-color: var(--verde-cecytem);
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--verde-cecytem);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login button:hover {
+    background-color: var(--verde-oscuro);
+}
+
+.login p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login a {
+    color: var(--verde-cecytem);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+#registro {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+#registro h3 {
+    text-align: center;
+}
+
+#registro label {
+    font-weight: bold;
+}
+
+#registro input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: var(--verde-cecytem);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--verde-oscuro);
+}
+.encabezado {
+    animation: aparecerDesdeArriba 1.2s ease-out;
+}
+
+@keyframes aparecerDesdeArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenido img {
+    animation: zoomLogo 1.5s ease-in-out;
+}
+
+@keyframes zoomLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.texto {
+    animation: aparecerTexto 1.3s ease-out;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contenido img {
+    transition: transform 0.4s ease;
+}
+
+.contenido img:hover {
+    transform: scale(1.05);
+}

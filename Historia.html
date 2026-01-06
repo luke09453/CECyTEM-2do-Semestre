@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historia del CECyTEM Plantel Cuautitlán</title>
+    <link rel="stylesheet" href="historia.css">
+    <style>
+:root {
+    --verde-cecytem: #008941;
+    --verde-oscuro: #006B32;
+    --gris-fondo: #F2F2F2;
+    --blanco: #ffffff;
+    --negro: #222222;
+}
+.encabezado {
+    animation: aparecerDesdeArriba 1.2s ease-out;
+}
+
+@keyframes aparecerDesdeArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenido img {
+    animation: zoomLogo 1.5s ease-in-out;
+}
+
+@keyframes zoomLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.texto {
+    animation: aparecerTexto 1.3s ease-out;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contenido img {
+    transition: transform 0.4s ease;
+}
+
+.contenido img:hover {
+    transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gris-fondo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.encabezado {
+    background: var(--verde-cecytem);
+    padding: 25px;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 28px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+}
+
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.contenido img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+
+.texto {
+    max-width: 700px;
+}
+
+.texto h2 {
+    color: var(--verde-oscuro);
+    border-left: 6px solid var(--verde-cecytem);
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+.texto p {
+    color: var(--negro);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.pie {
+    margin-top: 40px;
+    background: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Historia del CECyTEM Plantel Cuautitlán</h1>
+    </header>
+
+    <section class="contenido">
+
+        <img src="Anuncio.jpg" alt="Visitanos!!!!">
+
+        <div class="texto">
+            <h2>Inicio y fundación</h2>
+            <p>
+                El CECyTEM Plantel Cuautitlán fue creado con el propósito de ofrecer una 
+                alternativa educativa de calidad para los jóvenes del municipio y comunidades 
+                cercanas. Desde su apertura, el plantel ha trabajado bajo el modelo educativo 
+                bivalente: los estudiantes cursan el bachillerato al mismo tiempo que una carrera 
+                técnica.
+            </p>
+
+            <h2>Crecimiento y desarrollo académico</h2>
+            <p>
+                Con el paso de los años, el plantel ha ampliado su oferta educativa, actualizando 
+                sus programas técnicos y fortaleciendo el equipamiento de laboratorios y talleres. 
+                Gracias a esto, los alumnos pueden realizar prácticas profesionales y proyectos 
+                tecnológicos que mejoran su preparación para el mundo laboral.
+            </p>
+
+            <h2>Compromiso con la comunidad</h2>
+            <p>
+                A lo largo de su historia, el Plantel Cuautitlán se ha distinguido por su 
+                participación en actividades culturales, deportivas, científicas y de impacto 
+                social. La escuela mantiene una relación cercana con la comunidad, promoviendo 
+                valores, responsabilidad y espíritu de servicio.
+            </p>
+
+            <h2>Actualidad</h2>
+            <p>
+                Hoy en día, el CECyTEM Cuautitlán continúa siendo un referente educativo en la 
+                región. Con docentes preparados y estudiantes comprometidos, el plantel sigue 
+                formando generaciones capaces de continuar estudios superiores o integrarse al 
+                campo laboral con habilidades técnicas competitivas.
+            </p>
+        </div>
+        <img src="LogoCecytem.png" alt="Logo del Cecytem">
+    </section>
+
+    <footer class="pie">
+        © 2026 CECyTEM Plantel Cuautitlán – Página informativa
+    </footer>
+
+</body>
+</html>
